@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
-    <script src="index.js" defer></script>
+    <script src="index.js" defer type="module"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1 id="titulo">Lista de Tarefas</h1>
-    <input id="input" type="text" placeholder="Adicionar Tarefa" />
-    <button id="botao">+</button>
-    <ul id="listaTarefas"></ul>
+    <header class="header">
+      <h1 id="titulo">Lista de Tarefas</h1>
+    </header>
+    <div class="f-row gap-sm bg-cinza borda-arredondada nao-sobrepor">
+      <input
+        id="input"
+        type="text"
+        maxlength="700"
+        placeholder="Adicionar Tarefa"
+      />
+      <button title="Clique para adicionar" id="button">ADD</button>
+    </div>
+    <ul id="lista-tarefas"></ul>
   </body>
 </html>
